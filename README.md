@@ -80,6 +80,6 @@ For further information, please contact the author.
 
 ## Author
 
-Ayoub Khichi //
-Electrical Engineering Student 7/
+Ayoub Khichi<br>
+Electrical Engineering Student<br>
 Hochschule Koblenz
