@@ -2,15 +2,25 @@
 
 ## Overview
 
-This project presents the design and implementation of a stereo analog audio pre-amplifier with an integrated LED level indicator. The system amplifies low-level audio signals and provides a visual representation of signal activity.
+This project presents the design and implementation of a stereo analog audio pre-amplifier with an integrated LED level indicator.
+The system amplifies low-level audio signals and provides a visual indication of signal activity.
 
 ---
 
-## System Architecture
+## LTspice Simulation Model
 
-![System Architecture](image/system_architecture.png)
+![LTspice Schematic](image/ltspice_schematic.png)
 
-Block diagram showing the structure of the system including input processing, control logic, and output stages.
+Analog simulation model used to design and validate the circuit behavior.
+Includes amplifier stages, tone control network (bass and treble), and LED signal detection.
+
+---
+
+## KiCad Circuit Schematic
+
+![Circuit Schematic](image/circuit_schematic.png)
+
+Final circuit implementation translated into KiCad, including all components required for physical realization.
 
 ---
 
@@ -18,31 +28,15 @@ Block diagram showing the structure of the system including input processing, co
 
 ![Frequency Response](image/frequency_response.png)
 
-Simulated frequency response of the amplifier, showing stable gain across the audio range and controlled filtering behavior.
+Frequency response obtained from LTspice simulation, showing stable gain across the audio range and controlled filtering behavior.
 
 ---
 
-## Circuit Design
-
-![Circuit Schematic](image/circuit_schematic.png)
-
-Detailed circuit schematic including input stage, tone control, amplification stages, and LED signal detection.
-
----
-
-## PCB Design
+## PCB Design (3D View)
 
 ![PCB 3D View](image/pcb_3d.png)
 
-3D visualization of the PCB layout designed in KiCad, showing component placement and routing.
-
----
-
-## Code Logic
-
-![Tracking Logic](image/code_bbox_logic.png)
-
-Implementation of core signal or tracking logic, including coordinate correction and processing behavior.
+3D visualization of the PCB layout designed in KiCad, showing component placement, routing, and overall board structure.
 
 ---
 
@@ -59,32 +53,28 @@ Implementation of core signal or tracking logic, including coordinate correction
 
 ## Bill of Materials
 
-Main components used in the project:
+Main components used:
 
 * Operational amplifiers: TL082, LM358
 * Capacitors: 100nF, 47µF, 100µF, 1.5nF
-* Resistors: various values including 10kΩ, 100kΩ, 330kΩ
+* Resistors: 10kΩ, 100kΩ, 330kΩ and others
 * Diodes: 1N5819
 * LEDs: red indicator LEDs
 * Audio connectors: 3.5mm jack
-
-Full BOM is available in the project documentation.
 
 ---
 
 ## Documentation
 
-A detailed technical report is included in the repository:
-PCB_Bericht final.pdf
-
-This report covers theoretical background, simulation, design decisions, PCB layout, and validation results.
+The complete project report and detailed design documentation are not publicly included.
+For further information, please contact the author.
 
 ---
 
 ## Tools Used
 
-* KiCad for schematic and PCB design
-* LTspice for circuit simulation
+* KiCad
+* LTspice
 
 ---
 
